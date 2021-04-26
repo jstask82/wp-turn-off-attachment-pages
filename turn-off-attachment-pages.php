@@ -28,7 +28,7 @@ function _akdev_redirectAttachment()
 add_action('template_redirect', '_akdev_redirectAttachment', 10, 0);
 
 /*
- * Replace the attachment page URL
+ * Replace the attachment page url
  */
 function _akdev_replaceAttachmentLink($link, $postID)
 {
@@ -42,7 +42,7 @@ function _akdev_replaceAttachmentLink($link, $postID)
 add_filter('attachment_link', '_akdev_replaceAttachmentLink', 10, 2);
 
 /**
- * Remove the Attachment page Link
+ * Remove the attachment page link
  */
 function _akdev_removeAttachmentPageLink($link)
 {
@@ -51,7 +51,7 @@ function _akdev_removeAttachmentPageLink($link)
 add_filter('attachment_link', '_akdev_removeAttachmentPageLink');
 
 /***
- * Hide the admin aeria description Input
+ * Hide the admin area description input
  */
 function _akdev_hideDescriptionSetting()
 {
